@@ -1,0 +1,14 @@
+<h1> The View of All City</h1>
+
+
+<% @cities.all.each do |c| %>
+<% if not c.nil? %>
+	<h1> <%= c.name %></h1>
+	<p>
+		Population : <%= c.population %> <br/>
+		Landmark : <%= c.landmark %>
+	</p>
+<% end %>
+<% end %>
+
+

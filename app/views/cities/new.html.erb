@@ -1,0 +1,11 @@
+<%= form_with url: "create", local: true, method: "post" do |form| %>
+	City name:<br>
+	<%= form.text_field :city_name %> <br>
+	Population: <br>
+	<%= form.number_field :population %>
+	<br>
+	Landmark: <br>
+	<%= form.text_field :landmark %>
+	<br>
+	<%= form.submit "Submit" %>
+<% end %>
